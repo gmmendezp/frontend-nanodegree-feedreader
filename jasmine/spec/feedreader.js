@@ -55,14 +55,14 @@ $(function() {
         /* Test that ensures the menu element is
          * hidden by default.
          */
-        it('menu hidden by default', function() {
+        it('hidden by default', function() {
             expect($('body').hasClass('menu-hidden')).toBe(true);
         });
 
         /* Test that ensures the menu changes
          * visibility when the menu icon is clicked.
          */
-        it('menu changes visibility', function() {
+        it('changes visibility', function() {
             $('.menu-icon-link').click();
             expect($('body').hasClass('menu-hidden')).toBe(false);
             $('.menu-icon-link').click();
